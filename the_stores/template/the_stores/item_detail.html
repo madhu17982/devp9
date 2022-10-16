@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+   
+         
+         <img src="{{album.album_logo}}">  
+           
+         <a href="{% url 'index' %}" > Back to item list</a>
+         <h3>{{ album.artist| capfirst}}</h3>
+         <h1>{{ album.artist| capfirst}} </h1>
+         <p>{{album.codepython|capfirst}}</p>
+         <img src="/static/img/{{ album.img }}"
+         <h4>Album</h4>
+         <p> {{album.album_title}}</p>
+         <h4>Genre</h4>
+         <p>{{album.genre}}</p>
+         <h5> Logo </h5>
+         <h1>{{ album.title }}</h1>  
+          <pre> {{ album.myList}}</pre>
+                  
+                  
+{%endblock%}
